@@ -134,6 +134,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .email-input-box, .password-input-box {
