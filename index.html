@@ -6,14 +6,73 @@
     <title>UX/UI Developer Take-Home Coding Challenge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- Start delete the lines between this -->
-    <h1 style="text-align: center">Thank you for taking the time to complete this coding challenge</h1>
-    <!-- End delete the lines between this -->
+    <!-- Start Sign In Form -->
+    <form id="form" class="login wrapper">
+      <h1 class="login-title">SIGN IN</h1>
+      <div class="email-container">
+        <p class="input-text">Email Address</p>
+        <div class="email-input-container">
+          <input type="text" class="email-input-box" id="email" />
+          <img
+            src="./assets/danger-circle-icon.svg"
+            id="danger-icon"
+            alt="danger"
+          />
+        </div>
+      </div>
+      <div class="password-container">
+        <div class="password-text">
+          <p class="input-text">Password</p>
+          <p class="forgot-password-text">Forgot your password?</p>
+        </div>
+        <div class="password-input-container">
+          <input type="password" class="password-input-box" id="password" />
+          <img src="./assets/eye-show-icon.svg" id="eye-icon" alt="eye" />
+        </div>
+      </div>
+      <div class="remember">
+        <input type="checkbox" />
+        <p class="remember-text">Remember me</p>
+      </div>
+
+      <button type="submit" class="continue-btn">CONTINUE</button>
+      <div class="dont-have-acc">
+        <p>Don't have an account?</p>
+        <span class="sign-up-text">Sign Up</span>
+      </div>
+    </form>
+    <!-- End Sign In Form -->
+
+    <!-- Start Form Submitted -->
+    <div id="form-submitted">
+      <div class="form-submitted-container">
+        <div class="close-icon-container">
+          <img
+            class="close-icon-img"
+            id="close-icon"
+            src="assets/close-icon.svg"
+            alt="close-icon"
+          />
+        </div>
+        <div class="form-submitted-elements">
+          <img
+            class="chat-icon-img"
+            src="assets/chat-icon.svg"
+            alt="chat-icon"
+          />
+          <p class="form-submitted-text">Successfully Signed In!</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Form Submitted -->
 
     <script src="js/validator.js"></script>
   </body>
