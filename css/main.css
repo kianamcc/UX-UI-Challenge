@@ -212,6 +212,12 @@ body {
   cursor: pointer;
 }
 
+.remember-container {
+  display: flex;
+  align-items: center;
+  margin-left: 23px;
+}
+
 .remember-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -219,11 +225,6 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
-}
-
-.remember {
-  display: flex;
-  margin-left: 23px;
 }
 
 @media only screen and (max-width: 768px) {
