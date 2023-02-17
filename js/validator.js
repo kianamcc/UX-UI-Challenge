@@ -8,6 +8,9 @@ const email = document.getElementById("email");
 const form = document.getElementById("form");
 const errorElement = document.getElementById("error");
 
+// use class
+// lighthouse
+
 /* onblur event validation */
 email.onblur = function () {
   if (email.value === "" || email.value === null) {
@@ -52,7 +55,12 @@ form.addEventListener("submit", (e) => {
     eyeIcon.setAttribute("src", "./assets/danger-circle-icon.svg");
     password.style.border = "1px solid #FF0000";
     e.preventDefault();
-  } else {
+  } else if (
+    email.value !== "" &&
+    email.value !== null &&
+    password.value !== "" &&
+    password.value !== null
+  ) {
     e.preventDefault();
     form.style.display = "none";
     formSubmitted.style.display = "flex";

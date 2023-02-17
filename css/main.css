@@ -115,6 +115,8 @@ body {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 .password-input-container,
@@ -162,16 +164,17 @@ body {
 }
 
 .input-text {
-  width: 117px;
-  height: 19px;
-  left: calc(50% - 117px / 2 - 136.5px);
-  top: calc(50% - 19px / 2 - 90.5px);
+  display: block;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.email-text {
+  padding-bottom: 10px;
 }
 
 .continue-btn {
